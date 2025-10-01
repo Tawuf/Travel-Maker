@@ -1,188 +1,105 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PremiumClo — Contact</title>
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --accent:#22d3ee;
+      --accent2:#a78bfa;
+    }
+    html,body{margin:0;padding:0;background:linear-gradient(135deg,var(--bg),#020617);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Ubuntu,Helvetica,Arial,sans-serif;color:var(--text);}
+    .wrap{min-height:100dvh;display:grid;place-items:center;padding:28px;}
+    .card{
+      width:min(720px,92vw);
+      background:linear-gradient(145deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03));
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04) inset;
+      overflow:hidden;
+      backdrop-filter: blur(10px);
+    }
+    .hero{
+      padding:28px 28px 0 28px;
+      display:flex;gap:20px;align-items:center;flex-wrap:wrap;
+    }
+    .logo{
+      width:74px;height:74px;border-radius:18px;display:grid;place-items:center;
+      background: radial-gradient(100% 100% at 50% 0%, var(--accent), var(--accent2));
+      color:#0b1020;font-weight:800;font-size:28px;letter-spacing:0.5px;
+      box-shadow:0 10px 24px rgba(34,211,238,0.35);
+    }
+    .title{flex:1}
+    .title h1{margin:0 0 6px 0;font-size:28px;line-height:1.2}
+    .title p{margin:0;color:var(--muted)}
+    .links{display:grid;grid-template-columns:1fr;gap:12px;padding:22px}
+    .btn{
+      display:flex;align-items:center;gap:12px;
+      padding:16px 18px;border-radius:16px;text-decoration:none;color:var(--text);
+      background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);
+      transition:.2s transform,.2s background;
+    }
+    .btn:hover{transform:translateY(-2px);background:rgba(255,255,255,0.06)}
+    .ico{width:22px;height:22px;display:inline-block}
+    .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .muted{color:var(--muted)}
+    .footer{padding:0 22px 22px 22px;color:var(--muted);font-size:13px;text-align:center}
+    .qrwrap{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:10px 0 0 0}
+    .qrwrap img{width:130px;height:130px;border-radius:12px;border:1px solid rgba(255,255,255,.08)}
+    .hint{font-size:12px;margin-top:6px}
+  </style>
 </head>
 <body>
-    <nav class="top">
-        <div class="logo">
-             <img src="Images/Group 40071 (2).png" alt="">
-            <h3>Tavel <span class="coloredText">Maker</span></h3>
+  <div class="wrap">
+    <div class="card">
+      <div class="hero">
+        <div class="logo">PC</div>
+        <div class="title">
+          <h1>PremiumClo</h1>
+          <p class="muted">Tap a button below — all links are clickable</p>
         </div>
-       
-        <div class="nav2">
-            <a href="">Home </a>
-            <a href="">Packages</a>
-            <a href="">Testimonial</a>
-            <a href="">Blog</a>
-            <a href="">Contact</a>
+      </div>
+      <div class="links">
+        <a class="btn" href="https://www.facebook.com/share/16R7TiGq7k/" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07C2 17.1 5.66 21.2 10.44 22v-7.02H7.9v-2.91h2.54V9.84c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.22.2 2.22.2v2.44h-1.25c-1.23 0-1.62.76-1.62 1.55v1.86h2.76l-.44 2.91h-2.32V22C18.34 21.2 22 17.1 22 12.07z"/></svg>
+          <span>Facebook</span>
+          <span class="muted">/share/16R7TiGq7k/</span>
+        </a>
+        <a class="btn" href="https://www.premiumclo.com" target="_blank" rel="noopener">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 4a8 8 0 0 1 8 8c0 4.42-3.58 8-8 8S4 16.42 4 12a8 8 0 0 1 8-8zm0 2c-1.1 0-2.13.3-3.02.82A9.97 9.97 0 0 0 6 12c0 2.04.61 3.93 1.65 5.5A5.98 5.98 0 0 0 12 18a6 6 0 0 0 4.35-1.82A9.97 9.97 0 0 0 18 12c0-2.04-.61-3.93-1.65-5.5A5.98 5.98 0 0 0 12 6z"/></svg>
+          <span>Website</span>
+          <span class="muted">premiumclo.com</span>
+        </a>
+        <a class="btn" href="tel:+8801310445588">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.7 21 3 13.3 3 4a1 1 0 0 1 1-1h2.5a1 1 0 0 1 1 1c0 1.22.2 2.42.57 3.56a1 1 0 0 1-.24 1.01l-2.21 2.22z"/></svg>
+          <span>Call</span>
+          <span class="muted">+880 1310-445-588</span>
+        </a>
+        <a class="btn" href="mailto:premiumclobd@gmail.com">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+          <span>Email</span>
+          <span class="muted">premiumclobd@gmail.com</span>
+        </a>
+        <div class="footer">
+          <div class="qrwrap">
+            <div>
+              <img src="./qr_premiumclo_website.png" alt="QR to premiumclo.com">
+              <div class="hint">QR → premiumclo.com</div>
+            </div>
+            <div>
+              <img src="./qr_premiumclo_vcard.png" alt="QR to vCard">
+              <div class="hint">QR → Save contact</div>
+            </div>
+          </div>
+          <div class="hint">Tip: Upload this file to your site (e.g., https://www.premiumclo.com/contact)</div>
         </div>
-    </nav>
-    <div class="banner">
-        <h1 style="font-weight: bold;"> Explore Your Travel</h1>
-        <h6>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut at, dolore laborum odio totam hic.</h6>
-        <div class="destination">
-           <input type="text">
-           <select name="cars" id="cars">
-            <option value="Denmark">Denmark</option>
-            <option value="Australia">Australia</option>
-
-           
-          </select>
-          <select name="cars" id="cars">
-            <option value="Feb">Feb</option>
-            <option value="Jun">Jun</option>
-
-           
-          </select>
-           <button style="background-color: var(--primary-color);"> Search <i class="fa fa-search"></i> </button>
-        </div>
-
+      </div>
     </div>
-    
-    <div class="popularTours">
-        <div>
-            <h1>Our Popular Tours</h1>
-            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-            <ul >
-                <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
-                <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-                <li> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.</li>
-            <p>Amet consectetur. Vulputate commodo felis molestie risus 
-                ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
-            <button style="color: white; background-color: orange;">Read more</button>    
-
-            </ul>
-        </div>
-        <div>
-            <img src="Images/Rectangle 4.png" alt="" srcset="">
-        </div>
-    </div>
-    <div class="dest">
-        <div>
-            <h1 style="font-weight: bold ;text-align: center;">Choose Your Destination</h1>
-             <p style="text-align: center;">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-
-        </div>
-        
-        <div class="places">
-            <div class="row1">
-                <h3 class="Maldives ">Maldives</h3>
-                <h3 class="Indonesia">Indonesia</h3>
-            </div>
-            <div class="row2">
-                <h3 class="Srilanka">Srilanka</h3>
-                <h3 class="NorthAmerica">North America</h3>
-                <h3 class="Kashmir">Kashmir</h3>
-            </div>
-            <div class="row3">
-                <h3 class="bd">Bangladesh</h3>
-                <h3 class="Sb">Bandarban</h3>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div>
-            <h1 style="font-weight: bold ;text-align: center;">Why Choose Us</h1>
-            <p style="text-align: center;">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. <br>Sodales dictumst nec nibh pellentesque.</p>
-        </div>
-        <div class="cardHolder">
-            <div style="padding: 15px;" class="card"> <img  src="Images/94e505a3-05c1-497f-8d26-eb13ed6e04dc.jpg" alt="" srcset="">
-                <h2 style="font-weight: bold;">Handpicked Hotels</h2>
-                <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p>
-            </div>
-            <div style="padding: 15px; background-color: #e4f0f3;" class="card "><img src="Images/tt.jpg" alt="" srcset="">
-                <h2 style="font-weight: bold;">World Class Service</h2>
-            <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p></div>
-            <div style=" padding: 15px;" class="card card2"> <img  src="Images/aa.jpg" alt="" srcset="">
-                <h2 style="font-weight: bold;">Best Price Guarantee</h2>
-                <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. </p></div>
-            
-                </div>
-                     
-    </div>
-    <div style="margin-top: 200px;" class="Discounts">
-        <div style="text-align: center;">
-            <h1 style="font-weight: bold;">Deals & Discounts</h1>
-            <p>Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa. Sodales dictumst nec nibh pellentesque.</p>
-        </div>
-        <div class="L1">
-            <div class="msg">
-               <p style="color: white; font-weight: bold;"> <i  style ="color: orange;"class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; 7 Day / 6 Night   <i  style ="color: orange;"class="fa fa-users" aria-hidden="true"></i> &nbsp;&nbsp; Max : 10  <i  style ="color: orange;"class="fa fa-map-marker" aria-hidden="true"></i>  &nbsp;&nbsp;  Malaysia   </p>
-               <h1 style="font-weight: bold;">Tour To Satorini</h1>
-               <p>Amet consectetur. Vulputate commodo felis <br>
-                molestie risus  ornare nulla amet et. Libero commodo sagittis <br>dignissim adipiscing quis. Habitant adipiscing.</p>
-                <h1 style="font-weight: bold ; color: var(--primary-color);">Price: $1300-$1500</h1>
-                <button style="background-color: var(--primary-color);"> Book Now </button>
-                
-
-
-            </div>
-
-        </div>
-        <div style="margin-top:20px;" class="L1">
-            <div class="msg">
-               <p style="color: white; font-weight: bold;"> <i  style ="color: orange;"class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; 7 Day / 6 Night   <i  style ="color: orange;"class="fa fa-users" aria-hidden="true"></i> &nbsp;&nbsp; Max : 10  <i  style ="color: orange;"class="fa fa-map-marker" aria-hidden="true"></i>  &nbsp;&nbsp;  Malaysia   </p>
-               <h1 style="font-weight: bold;">Tour To Satorini</h1>
-               <p>Amet consectetur. Vulputate commodo felis <br>
-                molestie risus  ornare nulla amet et. Libero commodo sagittis <br>dignissim adipiscing quis. Habitant adipiscing.</p>
-                <h1 style="font-weight: bold ; color: var(--primary-color);">Price: $1300-$1500</h1>
-                <button style="background-color: var(--primary-color);"> Book Now </button>
-                
-
-
-            </div>
-
-        </div>
-        <div style="margin-top:20px; padding-left: 30px; "  class="L1">
-            <div class="msg">
-               <p style="color: white; font-weight: bold;"> <i  style ="color: orange;"class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;&nbsp; 7 Day / 6 Night   <i  style ="color: orange;"class="fa fa-users" aria-hidden="true"></i> &nbsp;&nbsp; Max : 10  <i  style ="color: orange;"class="fa fa-map-marker" aria-hidden="true"></i>  &nbsp;&nbsp;  Malaysia   </p>
-               <h1 style="font-weight: bold;">Tour To Satorini</h1>
-               <p>Amet consectetur. Vulputate commodo felis <br>
-                molestie risus  ornare nulla amet et. Libero commodo sagittis <br>dignissim adipiscing quis. Habitant adipiscing.</p>
-                <h1 style="font-weight: bold ; color: var(--primary-color);">Price: $1300-$1500</h1>
-                <button style="background-color: var(--primary-color);"> Book Now </button>
-                
-
-
-            </div>
-
-        </div>
-
-        <button style="background-color: var(--primary-color); width: 210px; height: 52px;  margin-top: 10px; margin-left: 42%; border-radius: 5px;" type="button"> See All Packages</button>
-    </div>
-    </div>
-   <div>
-    <div style="margin-top: 20px;" class="popularTours">
-        <div>
-            <h1>A Simple Perfect Place To Get Lost</h1>
-            <p>Amet consectetur. Vulputate commodo felis molestie risus  ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. </p>
-            <ul >
-                <li>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</li>
-                <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.</li>
-               
-           
-            <button style="color: white; background-color: orange;">See more</button>    
-
-            </ul>
-        </div>
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/P3ZpIUNT1nE?si=K9XC5iX984ciOF-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-               
-         </div>
-    </div>    
-   </div>
-   <div class="News">
-    <h1>Newsletter</h1>
-    <p>Get your daily dose of travel news & tips. Sign up today!</p>
-    <input style="height:52px; width:350px;" type="text"  placeholder="Enter Your Name"> <br>
-    <input style="height:52px; width:350px;margin-top: 10px ;margin-bottom: 10px;" type="email"  placeholder="Enter Your Email"> <br>
-    <button style="color: white; background-color: orange;width:350px; border-radius: 7px;">See more</button>   
-   </div>
+  </div>
 </body>
 </html>
